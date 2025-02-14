@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta Animada de San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container"></div>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <!-- Frente de la hoja (Mensaje) -->
+                <div class="card-front">
+                    <div class="message-content">
+                        <h1>¡Feliz San Valentín! 💌</h1>
+                        <p>Para mi persona favorita,</p>
+                        <p>Hoy quiero recordarte lo especial que eres para mí...</p>
+                        <p class="hint">(Toca la carta para girarla)</p>
+                    </div>
+                </div>
+                
+                <!-- Reverso de la hoja (Foto) -->
+                <div class="card-back">
+                    <img src="img/s3.jpeg" class="hidden-image" alt="Nuestro momento" >
+                    <canvas id="scratchCanvas"></canvas>
+                    <div class="scratch-instruction">¡Rasca para revelar nuestro recuerdo!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
